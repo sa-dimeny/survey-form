@@ -1,0 +1,60 @@
+body {
+  background-color: #fbead4;
+  color: #1c0f00;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 16px;
+}
+#title,
+#description {
+  color: #ffddd0;
+}
+#main {
+  border-radius: 25px;
+  background-color: #7c3c22;
+  width: 430px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+#survey-form {
+  line-height: 1.5;
+  border-radius: 25px;
+  width: 390px;
+  margin: auto;
+  padding-left: 20px;
+  text-align: left;
+  background-color: #ffddd0;
+  color: #350f00;
+}
+#buttonwrap {
+  text-align: center;
+  padding-right: 20px;
+}
+#number,
+#dropdown,
+#radio,
+#checks,
+#submit {
+  margin-bottom: 10px;
+}
+#name {
+  margin-top: 10px;
+}
+#number-label {
+  margin-left: 16px;
+}
+label {
+  font-style: italic;
+}
+#dropdown,
+.textin,
+::placeholder {
+  color: #7c3c22;
+  opacity: 0.7;
+}
+#submit {
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #7c3c22;
+  color: #ffddd0;
+}

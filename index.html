@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      async
+    ></script>
+    <div id="main">
+      <h1 id="title">Survey Form</h1>
+      <P id="description">Tell us how we can improve our services:</P>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="textin"
+          placeholder="Enter your name"
+          required
+        /><br />
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="textin"
+          placeholder="chars@chars.chars"
+          required
+        /><br />
+        <label for="number" id="number-label">Age:</label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="100"
+          class="textin"
+          placeholder="10-100"
+        /><br />
+        <label for="dropdown">Occupation:</label>
+        <select name="occupation" id="dropdown">
+          <option value="student">Student</option>
+          <option value="employee">Employee</option>
+          <option value="owner">Business owner</option>
+          <option value="unemployed">Unemployed</option> </select
+        ><br />
+        <label for="radio">How satisfied were you with our services?</label>
+        <div id="radio">
+          <input type="radio" name="satisfaction" id="very" value="very" /> Very
+          satisfied <br />
+          <input
+            type="radio"
+            name="satisfaction"
+            id="satisfied"
+            value="satisfied"
+          />
+          Satisfied <br />
+          <input type="radio" name="satisfaction" id="so-so" value="so-so" />
+          So-so
+          <br />
+          <input type="radio" name="satisfaction" id="not" value="not" /> Could
+          be better <br />
+        </div>
+        <div id="checks">
+          <label for="checks"
+            >What are the things that could be improved?</label
+          >
+          <br />
+          <input type="checkbox" value="ch1" /> The price <br />
+          <input type="checkbox" value="ch2" /> The selection of merchandise
+          <br />
+          <input type="checkbox" value="ch3" /> Customer relations <br />
+          <input type="checkbox" value="ch4" /> The quality of products <br />
+          <input type="checkbox" value="ch5" /> The delivery time <br />
+        </div>
+        <div id="comment">
+          <label for="suggestion">Any other questions or suggestions?</label>
+          <br />
+          <textarea
+            name="textarea"
+            id="suggestion"
+            cols="50"
+            rows="4"
+            class="textin"
+            placeholder="Enter text here..."
+          ></textarea>
+        </div>
+        <div id="buttonwrap">
+          <input type="submit" id="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
