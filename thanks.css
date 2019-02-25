@@ -3,15 +3,22 @@ body {
   color: #350f00;
   text-align: center;
   font-family: Georgia, serif;
-  font-size: 16px;
 }
-h1 {
-  font-size: 20px;
+@media (min-width: 540px) {
+  h1,
+  a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 539px) {
+  h1,
+  a {
+    font-size: 4vw;
+  }
 }
 a {
   border: 3px solid #350f00;
   padding: 5px 20px;
-  font-size: 20px;
   color: #350f00;
   background-color: #ffddd0;
   border-radius: 20px;
@@ -21,7 +28,6 @@ a {
 a:hover {
   border: 3px solid #350f00;
   padding: 5px 20px;
-  font-size: 20px;
   color: #ffddd0;
   background-color: #350f00;
   border-radius: 20px;
